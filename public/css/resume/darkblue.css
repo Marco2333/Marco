@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.head-image img {
+	border-color: #4C70BA; 
+}
+#widget-profile {
+	background-color: #3B5998;
+}
+#tab-nav-list {
+	background-color: #3B5998;
+}
+#tab-nav-list li {
+	background-color: #3B5998;
+}
+#tab-nav-list ul > li:hover .fa,
+#tab-nav-list ul > li.active .fa {
+	background-color: #3B5998;
+}
+.section-title {
+	color: #3B5998;
+}
+.section-body tr td:first-child {
+	color:  #3B5998;
+}
+.skillbar-title, 
+.skillbar-bar {
+    background: rgba(59, 89, 152, 0.8);
+}
+#profile-social a {
+	 background-color: #3B5998;
+}
+#profile_social a:hover {
+    color: #3B5998;
+}
+#profile-social a:hover {
+	border-color: #3B5998;
+	color: #fff;
+    background-color: #3B5998;
+}
+#profile-social a {
+	color: #3B5998;
+}
+.tab-title {
+	background: #3B5998;
+}
+.tab-title .glyphicon {
+	 color: #3B5998;
+}
+.tab-title:hover {
+    background: rgba(59, 89, 152, 0.8) !important;
+}

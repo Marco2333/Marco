@@ -1,0 +1,67 @@
+layDate致力于成为全球最用心的web日期支撑，为国内外所有从事web应用开发的同仁提供力所能及的动力。她基于原生JavaScript精心雕琢，兼容了包括IE6在内的所有主流浏览器。她具备优雅的内部代码，良好的性能体验，和完善的皮肤体系，并且完全开源，你可以任意获取开发版源代码，一扫某些传统日期控件的封闭与狭隘。layDate本着资源共享的开发者精神和对网页日历交互无穷的追求，延续了layui一贯的简单与易用。她遵循LGPL协议，您可以免费将她用于任何个人项目
+
+参数解释：
+
+istime ： 判断是否时间，如果true则判断时间合法性，乱输入的将提示然后清空
+
+format ：日期格式，hh:mm:ss则表示需要具体时间，另外，需要先选择时间，再选择日期，因为点击日期后将被认为是选择完毕。
+
+festival ：true  是否显示节日。注意：只显示国际节日
+
+istoday : false  是否显示今天的按钮，默认为显示
+
+min ：'2015-01-01 00:00:00'    选择最小日期
+
+max ：'2015-02-02 12:00:00'    选择最大日期
+
+最小日期与最大日期选择后的不足之处：
+
+1. 如上，现在是2014年，日期段被定义为上面区间的时候，年份能自动定位到2015年，月份无法自动定位到01月
+
+2. 如上，最大日期是12点，但是 我选择2015-02-02 06 之后分和秒无法选择了
+
+min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+max: laydate.now(+1) //+1代表明天，+2代表后天，以此类推
+<input onclick="laydate()">    //最简单的调用方式
+<input onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">    //附带条件的调用方式
+<div onclick="laydate()"></div>        //您其实还可以设定任何html元素作为目标对象
+外部调用JS方法：
+
+<input type="text" id="#hello" />
+laydate({
+
+    elem: '#hello', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+
+    event: 'focus' //响应事件。如果没有传入event，则按照默认的click
+
+});
+<input type="text" id="#hello" class="laydate-icon"/>    //添加class属性，则在输入框中带日期icon，并且修饰input框
+图标触发日期 ：
+
+<input id="hello1">
+<span class="laydate-icon" onclick="laydate({elem: '#hello1'});"></span>    //通过elem标记，将日期空间渲染到input框中
+=============以下内容由 佳奇爹 提供=================
+
+【自定义日期格式】
+
+<div id="test1" class="laydate-icon"></div>
+
+<script>laydate({
+    elem: '#test1',
+    format: 'YYYY/MM', // 分隔符可以任意定义，该例子表示只显示年月
+    festival: true, //显示节日
+    choose: function(datas){ //选择日期完毕的回调
+        alert('得到：'+datas);
+    }});
+</script>
+
+
+【日期范围限定在昨天到明天】
+
+<div id="hello3" class="laydate-icon"></div>
+
+<script>laydate({
+    elem: '#hello3',
+    min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+    max: laydate.now(+1) //+1代表明天，+2代表后天，以此类推});
+</script>

@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* ===============
+ * Css reset(重新定义Html元素)
+ * =============== */
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, 
+del, dfn, em, img,
+small, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: "MicroSoft YaHei", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+ol, ul {
+    list-style: none outside none;
+}
+audio,canvas,video {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+strong { 
+    font-weight: bold;
+}
+fieldset, img { 
+    border: medium none;
+}
+caption, th { 
+     text-align: left;
+}
+a:link, a:visited, a:active { 
+    color: #3399ff;
+    text-decoration: none;
+}
+/* ============================================
+ * 常用宽度、高度、边距、字体、颜色、布局等样式
+ * ============================================*/
+.w {
+     width: 100%
+}
+.h {
+    height: 100%;
+}
+.w-none {
+    width: 0;
+}
+.h-none {
+    height: 0;
+}
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+.fl { 
+    float: left;
+}
+.fr { 
+    float: right;
+}
+.block { 
+    display: block;
+    zoom: 1;
+}
+.iblock{
+    display: inline-block;
+}
+.none { 
+    display: none;
+}
+.none-important {
+    display: none !important;
+}
+.b{
+    font-weight: bold;
+}
+.cl{
+    clear: left;
+}
+.cr{
+    clear: right;
+}
+.cb{
+    clear: both;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.pf {
+    position: fixed;
+}
+.text-w{
+    color: #fff;
+}
+.text-b{
+    color:#000;
+}
+.text-l {
+    color: #aaa;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-black {
+    background-color: #000;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.ucase {
+    text-transform:uppercase;
+} /*文字大写*/
+.lcase{
+    text-transform:lowercase;
+} /*文字小写*/
+.capitalize{ 
+    text-transform:capitalize;
+} /*首字母大写*/
+.spliter {
+    border-left:1px solid #aaa;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after { 
+   content:"";
+   display:table;
+   clear:both;
+}
+.box-shadow{
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.1);
+    box-shadow:0 1px 2px rgba(0,0,0,0.1);
+}
+.text-shadow{
+    -webkit-text-shadow:0 0 2px rgba(0,0,0,0.2);
+    text-shadow:0 0 2px rgba(0,0,0,0.2);
+}
+sub,sup
+.sub,.sup{
+    position:relative;
+    font-size:75%;
+    line-height:0;
+    vertical-align:baseline;
+}
+sup,.sup{
+    top:-0.5em;
+}
+sub,.sub{
+    bottom:-0.25em;
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 99;  
+}
+.error-info {
+    color: #F90B0B!important;
+    font-size: 12px;
+    font-family: "SimHei";
+}
+.one-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.opacity-none {
+    -webkit-opacity: 0;  
+    -moz-opacity: 0;  
+    -khtml-opacity: 0;  
+    opacity: 0;    
+    filter:alpha(opacity=0);  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);  
+}
+.file {
+    width: 80px;
+    height: 28px;
+    line-height: 26px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #EF7C5A;
+    border-radius: 2px;
+    text-align: center;
+    overflow: hidden;
+    color: #EF7C5A;
+    text-decoration: none;
+    text-indent: 0;
+    font-weight: 700;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #EF7C5A;
+    color: #fff;
+    border: 1px solid rgba(1,1,1,0);
+    text-decoration: none;
+}
+.page {
+    margin-top: 16px;
+}
+.page span {
+    margin: 0 4px;
+}
+.page a {
+    text-align: center;
+    border: 1px solid #1dccaa;
+    width: 26px;
+    height: 26px;
+    margin: 0 4px;
+    display: inline-block;
+    padding-top: 3px;
+}
+.info-tips {
+    padding: 6px 12px;
+    position: fixed;
+    background: rgba(1,1,1,.6);
+    border-radius: 5px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.loder {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 100%;
+    border: 5px solid;
+    border-top-color: rgba(246, 36, 89, 1);
+    border-bottom-color: rgba(0,0,0, 0.1);
+    border-left-color: rgba(246, 36, 89, 1);
+    border-right-color: rgba(0,0,0, 0.1);
+    -webkit-animation: loader4 1s ease-in-out infinite;
+    animation: loader 1s ease-in-out infinite;
+}
+@keyframes loader {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(360deg);}
+}
+@-webkit-keyframes loader {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(360deg);}
+}
+.center {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3D(-50%,-50%,0);
+    -ms-transform: translate3D(-50%,-50%,0);
+    -moz-transform: translate3D(-50%,-50%,0);
+    -o-transform: translate3D(-50%,-50%,0);
+    transform: translate3D(-50%,-50%,0);
+    z-index: 100;
+}
+

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*科e互联特效基本框架CSS*/
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div{margin:0 auto}
+div {text-align:left}
+a img {border:0}
+body { color: #333; text-align: center; font: 12px "微软雅黑"; }
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#535353;text-decoration:none}
+a:hover { color: #D40000; text-decoration: none}
+.clear{height:0; overflow:hidden; clear:both}
+.cor_bs,.cor_bs:hover{color:#ffffff;}
+.keBody{background:url(../images/bodyBg.jpg) repeat #333;}
+.keTitle{height:100px; line-height:100px; font-size:30px; font-family:'微软雅黑'; color:#FFF; text-align:center; background:url(../images/bodyBg3.jpg) repeat-x bottom left; font-weight:normal; overflow:hidden}
+.kePublic{ background: #FFF; padding: 50px 0 20px; }
+.kePublic *{color: #fff; line-height: 20px; padding: 5px 20px; font-size: 16px; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.1em;}
+.keBottom{color:#FFF; padding-top:25px; line-height:28px; text-align:center; font-family:'微软雅黑'; background:url(../images/bodyBg2.jpg) repeat-x top left; padding-bottom:25px}
+.keTxtP{font-size:16px; color:#ffffff;}
+.keUrl{color:#FFF; font-size:30px;}
+.keUrl:hover{ text-decoration: underline; color: #FFF; }
+.mKeBanner,.mKeBanner div{text-align:center;}
+.button{color:#fff!important;}
+/*科e互联特效基本框架CSS结束，应用特效时，以上样式可删除*/
+/* 效果CSS开始 */
+.mul li{height:220px; border-bottom:1px solid #F96;}
+.mbox{ width: 200px; height: 80px; background: #F63; margin: 50px auto 50px auto; -sand-transform: rotate(25deg); }
+.mbox2{ width: 200px; height: 80px; background: #C3C; margin: 50px auto auto; -sand-transform: skew(45deg, 0deg); }
+.mbox3{ width: 200px; height: 80px; background: #096; margin: 50px auto auto;  }
+/* 效果CSS结束 */

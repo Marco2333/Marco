@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+* {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+#admin-sidebar {
+	width: 180px;
+	height: 100%;
+	background-color: #f0f0f0;
+	position: absolute;
+	border-right: 1px solid #ddd;
+}
+.main-content {
+    margin-left: 180px;
+}
+.main-container {
+	position: relative;
+}
+.page-content {
+	position: relative;
+	overflow: hidden;
+}
+.page-content iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.page-content .current {
+	z-index: 99;
+}
+.sub-list {
+    display: none;
+}
+.tab-nav {
+	height: 40px;
+	min-width: 800px;
+	padding: 10px 7px 0 7px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e0e0e0;
+}
+.tab-nav li {
+	float: left;
+	height: 29px;
+	margin: 0 4px; 
+	border: 1px solid #e0e0e0;
+	border-bottom: none;
+	background-color: #fff;
+	display: inline-block;
+	line-height: 28px;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+}
+.tab-nav li a {
+	color: #444;
+	display: inline-block;
+	padding: 0 16px;
+}
+.tab-nav li:hover a,
+.tab-nav li.active a {
+	text-decoration: none;
+	color: #0073ea;
+}
+.tab-nav li.active {
+	color: #0073ea;
+}
+.tab-nav li .icon-remove {
+	margin-left: 10px;
+}
+.tab-nav li.active {
+	height: 30px;
+	border-radius: 2px;
+}
+.tab-nav li .icon-remove:hover {
+	color: #ee6356;
+}
+.close-tab {
+	padding: 0 9px 0 2px;
+	float: right;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+/*nava-side*/
+.nav-side {
+    background-color: #f0f0f0;
+}
+.nav-list-item a {
+    color: #555;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 40px;
+}
+.nav-list-item a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #1abc9c;
+}
+.nav-list-item.active > a {
+    color: #1abc9c;
+}
+.sub-list li.active a {
+    color: #1abc9c;
+}
+.nav-list-item.active > a .fa-angle-right {
+    transform: rotate(90deg);
+    transition: all 251ms;
+    -moz-transition: all 251ms; 
+    -webkit-transition: all 251ms;
+    -o-transition: all 251ms;
+    -ms-transition: all 251ms;  
+}
+.nav-list-item .fa-angle-right {
+    font-size: 16px;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+.nav-list-item > a {
+    padding-left: 10px; 
+}
+.sub-list li a {
+    color: #555;
+    padding-left: 26px;
+    background-color: #f8f8f8;
+}
+.nav-list-item > a i:first-child {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/*top*/
+#nav-top {
+    min-width: 1265px;
+    height: 40px;
+    background-color: #444;
+    background-repeat: repeat-x;
+}
+#nav-top a {
+    color: #fff;
+    margin-left: 10px;
+}
+#nav-top a:hover {
+    color: #f00;
+}
+.system-name {
+    margin-top: 8px;
+    margin-left: 16px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+}
+.system-name .system-name-logo {
+    margin-right: 5px;
+}
+#nav-top-pinfo {
+    height: 40px;
+    max-width: 240px;
+    margin-right: 25px;
+    padding: 0 12px;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: "Microsoft YaHei";
+}
+#nav-top-pinfo .fa {
+	font-size: 16px;
+}
+.user-logout {
+    color: #d11;
+    margin: 0 5px;
+    font-family: "SimHei";
+}
+
+/*login*/
+#admin-log-button > span {
+	width: 34px;
+	height: 34px;
+	line-height: 32px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: 1px solid #aaa;
+    border-radius: 100%; 
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#admin-log-button > span:hover {
+	font-size: 13px;
+	background-color: #bbb;
+	color: #fff;
+}
+#admin-log-button input[type='submit'] {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#admin-log-wrapper {
+	width: 330px;
+	height: 240px;
+	padding: 18px;
+	box-shadow: 0 0 20px rgb(180,180,180);
+	border-radius: 6px;
+	background-color: #fff;
+}
+.main-container {
+	position: relative;
+}
+.admin-log-title {
+	border-bottom: 1px solid #eee;
+	text-align: center;
+}
+.admin-log-title h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: "SimHei";
+}
+.admin-log-body .admin-user-info {
+	border: 1px solid #eee;
+	border-radius: 3px;
+	height: 34px;
+}
+.admin-user-info {
+	margin: 20px 0;
+}
+.admin-user-info span {
+	display: inline-block;
+	height: 100%;
+	width: 15%;
+	float: left;
+	text-align: center;
+	font-size: 17px;
+	padding-top: 7px;
+	border-right: 1px solid #eee;
+}
+.admin-user-info input[type='text'],
+.admin-user-info input[type='password'] {
+	height: 100%;
+	width: 82%;
+	float: left;
+	border: none;
+	font-family: "Microsoft YaHei";
+	outline: none;
+	padding-left: 5px;
+}
+
+/*newBlog*/
+.col-5 {
+	width: 50% !important;
+	float: left;
+}
+#new-blog-wrapper {
+	width: 100%;
+	max-width: 1100px;
+	padding: 30px 60px;
+}
+#new-blog-front {
+	margin-bottom: 15px;
+}
+#new-blog-front label {
+	margin-right: 4px;
+	font-size: 15px;
+}
+#blog-title {
+	width: 280px;
+	height: 32px;
+	margin-right: 20px;
+	border: 1px solid #ddd;
+	text-indent: 6px;
+	outline: none;
+	border-radius: 1px;
+	font-family: "Microsoft YaHei";
+}
+#blog-type {
+	width: 60px;
+	height: 31px;
+	outline: none;
+	border: 1px solid #ccc;
+	font-family: "Microsoft YaHei";
+}
+#blog-theme {
+	width: 80px;
+	height: 31px;
+	margin-right: 15px;
+	outline: none;
+	border: 1px solid #ccc;
+	font-family: "Microsoft YaHei";
+}
+#blog-keywords {
+	width: 140px;
+	height: 32px;
+	margin-right: 18px;
+	border: 1px solid #ddd;
+	text-indent: 6px;
+	outline: none;
+	border-radius: 1px;
+	font-family: "Microsoft YaHei";
+}
+#new-blog-submit {
+	width: 88px;
+	height: 33px;
+	margin-top: 15px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	outline: none;
+	border-radius: 2px;
+	font-family: "Microsoft YaHei";
+}
+#new-blog-submit:hover {
+	color: #fff;
+	border: none;
+	background-color: #ee2323;
+}
+
+#blog-preview {
+	float: left;
+	display: inline-block;
+	min-height: 300px;
+	padding: 10px 18px;
+	font-size: 16px;
+	line-height: 22px;
+	overflow: auto;
+	font-family: "Microsoft YaHei";
+}
+.half-devide {
+	display: inline-block;
+	border-right: 1px solid #ddd;
+}
