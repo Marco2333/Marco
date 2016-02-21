@@ -46,9 +46,9 @@
 									<ul class="sub-list">
 										@foreach($ab as $b)
 											<li date-category="{{ $b['category'] }}"><a href="{{ url('/detail/'.$b['id']) }}">
-											@if($blog->type == 2) 
+											@if($b['type'] == 2) 
 												[转]
-											@elseif($blog->type == 3)
+											@elseif($b['type'] == 3)
 												[译]
 											@endif
 											{{ $b['title'] }}</a></li>

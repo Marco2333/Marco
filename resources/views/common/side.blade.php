@@ -7,7 +7,7 @@
 	        <ol>
 
 	        	@foreach ($newBlog as $b) 
-					<li><a href="{{ url('detail/'.$b->id) }}">{{ $b->title }}</a></li>
+					<li class="one-line"><a href="{{ url('detail/'.$b->id) }}">{{ $b->title }}</a></li>
 	        	@endforeach
 
 	        </ol>

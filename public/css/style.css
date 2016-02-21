@@ -136,6 +136,9 @@
 	padding: 10px 28px;
 	overflow: auto;
 }
+#blog-detail li {
+	list-style: inside;
+}
 .blog-content {
 	font-size: 14px;
 	word-spacing: 2px;

@@ -33,7 +33,7 @@ class IndexController extends Controller
     }
 
     public function archive() {
-        $blogs = Blog::where('status', '1')->select('id','title','category','created_at')
+        $blogs = Blog::where('status', '1')->select('id','title','category','created_at','type')
             ->orderBy('created_at', 'desc')->get();
 
         $n = 0;
@@ -62,6 +62,7 @@ class IndexController extends Controller
                 $b['id'] = $blogs[$i]->id;
                 $b['title'] = $blogs[$i]->title;
                 $b['category'] = $blogs[$i]->category;
+                $b['type'] = $blogs[$i]->type;
 
                 $blog_date[$n++] = $b;
             }
@@ -76,6 +77,7 @@ class IndexController extends Controller
                 $b['id'] = $blogs[$i]->id;
                 $b['title'] = $blogs[$i]->title;
                 $b['category'] = $blogs[$i]->category;
+                $b['type'] = $blogs[$i]->type;
 
                 $blog_date[$n++] = $b;
             }
@@ -154,10 +156,11 @@ class IndexController extends Controller
         for($i = 0; $i < count($blogs); $i++ ) {
 
             $body = $blogs[$i]->body;
-            $abs = mb_substr($body,0,400,"utf-8");
 
+            $abs = mb_substr( strip_tags($body),0,400,"utf-8");
             // 博客摘要
             $blogs[$i]->abstract = $abs;
+          
         }
 
         return view('Index/category',['blogs' => $blogs]);
