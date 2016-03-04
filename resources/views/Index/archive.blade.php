@@ -11,7 +11,7 @@
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-				<div id="archive-list-wrap" class="content-wrapper col-sm-9  wow bounceInLeft">
+				<div id="archive-list-wrap" class="content-wrapper col-sm-9  wow fadeInLeft">
 					<div id="archive-header">
 						<span>博客归档</span>
 					
@@ -19,7 +19,7 @@
 						<select name="blog-time" id="blog-time">
 							<option value="all">全部</option>
 							
-							@if(!isset($date_sum) )
+							@if(isset($date_sum) )
 								@foreach($date_sum as $ds)
 									<option value="{{ $ds }}">{{ substr($ds,0,4).'年 '.substr($ds,4,2).' 月' }}</option>
 								@endforeach

@@ -85,7 +85,6 @@ class IndexController extends Controller
 
         $archive_blog[$cur_year.''. $cur_month] = $blog_date;
         $date_sum[$m] = $cur_year.''. $cur_month;
-
        
 
         return view('Index/archive', ['archive_blog' => $archive_blog,'date_sum' => $date_sum,'types' => $types]);
@@ -180,8 +179,7 @@ class IndexController extends Controller
         for($i = 0; $i < count($blogs); $i++ ) {
 
             $body = $blogs[$i]->body;
-            $abs = mb_substr($body,0,400,"utf-8");
-
+            $abs = mb_substr( strip_tags($body),0,400,"utf-8");
             // 博客摘要
             $blogs[$i]->abstract = $abs;
         }

@@ -1,5 +1,5 @@
 <div id="side-bar" class="col-sm-3">
-	<div class="panel panel-default wow bounceInRight">
+	<div class="panel panel-default wow fadeInRight">
 	    <div class="panel-heading">
 	        <h3 class="panel-title">最新随笔</h3>
 	    </div>
@@ -13,7 +13,7 @@
 	        </ol>
 	    </div>
 	</div>
-	<div class="panel panel-default wow bounceInRight">
+	<div class="panel panel-default wow fadeInRight">
 	    <div class="panel-heading">
 	        <h3 class="panel-title">随笔分类</h3>
 	    </div>
@@ -30,7 +30,7 @@
 
 	@if($links != null)
 	
-		<div class="panel panel-default  wow bounceInRight">
+		<div class="panel panel-default  wow fadeInRight">
 		    <div class="panel-heading">
 		        <h3 class="panel-title">友情链接</h3>
 		    </div>
@@ -50,7 +50,7 @@
 
 	@if($wise_words != null)
 		
-		<div class="panel panel-default  wow bounceInRight">
+		<div class="panel panel-default  wow fadeInRight">
 		    <div class="panel-heading">
 		        <h3 class="panel-title">Wise Words</h3>
 		    </div>

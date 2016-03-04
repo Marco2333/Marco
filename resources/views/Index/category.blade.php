@@ -13,7 +13,7 @@
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-				<div id="blog-list-wrap" class="content-wrapper col-sm-9 wow bounceInLeft">
+				<div id="blog-list-wrap" class="content-wrapper col-sm-9 wow fadeInLeft">
 					<div id="blog-list">
 						@foreach ($blogs as $blog) 
 							<div class="blog">
@@ -52,8 +52,8 @@
 		      containerID : "blog-list",  
 		      previous : "←",  
 		      next : "→",  
-		      perPage : 8,
-		      animation: 'wobble'
+		      perPage : 8
+		      // animation: 'wobble'
 		    });  
 
 		    var height = $("#side-bar").outerHeight();

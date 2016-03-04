@@ -267,7 +267,7 @@
 }
 #new-blog-wrapper {
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1050px;
 	padding: 30px 60px;
 }
 #new-blog-front {
@@ -337,6 +337,9 @@
 	line-height: 22px;
 	overflow: auto;
 	font-family: "Microsoft YaHei";
+}
+#blog-preview li {
+	list-style: inside;
 }
 .half-devide {
 	display: inline-block;

@@ -12,7 +12,7 @@
 	<div class="main-content">
 		<div class="container">
 			<div class="row">
-				<div class="content-wrapper col-sm-9 wow bounceInLeft">
+				<div class="content-wrapper col-sm-9 wow fadeInLeft">
 					<div id="allmap"></div> 	
 					<div id="contact-detail">
 						<div class="row">

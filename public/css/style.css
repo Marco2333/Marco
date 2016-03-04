@@ -137,13 +137,13 @@
 	overflow: auto;
 }
 #blog-detail li {
-	list-style: inside;
+	list-style-position: inside;
+	margin-left: 20px;
 }
 .blog-content {
 	font-size: 14px;
 	word-spacing: 2px;
 	line-height: 22px;
-	text-indent: 25px;
 	word-wrap: break-word;
 }
 .blog-date {
@@ -508,7 +508,9 @@
 	padding: 7px 0;
 	font-size: 13px;
 }
-
+.blog-content .syntaxhighlighter table {
+	overflow: hidden !important;
+}
 
 
 
